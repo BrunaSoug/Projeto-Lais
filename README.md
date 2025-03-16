@@ -6,7 +6,7 @@ Este projeto, desenvolvido como parte da disciplina de Empreendedorismo, tem com
 - 👩‍💻[@BrunaSoug](https://github.com/BrunaSoug)
 - 👨‍💻Caio Dutra Moretti
 - 🎨Daniel Pereira Godoy
-- 👨‍💻Everton França Pinto da Silva
+- 👨‍💻[@EvertonFSilva](https://github.com/EvertonFSilva)
 - 🎨Jaderson Gonçalves Abreu
 - 🎨Kaylane Motta Martins 
 - 👨‍💻Matheus de Carvalho Braga 
