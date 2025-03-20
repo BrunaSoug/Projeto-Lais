@@ -4,12 +4,12 @@ Este projeto, desenvolvido como parte da disciplina de Empreendedorismo, tem com
 ## Autores
 
 - 👩‍💻[@BrunaSoug](https://github.com/BrunaSoug)
-- 👨‍💻Caio Dutra Moretti
+- 👨‍💻[@caiodmoretti](https://github.com/caiodmoretti).
 - 🎨Daniel Pereira Godoy
 - 👨‍💻[@EvertonFSilva](https://github.com/EvertonFSilva)
 - 🎨Jaderson Gonçalves Abreu
 - 🎨Kaylane Motta Martins 
-- 👨‍💻Matheus de Carvalho Braga 
+- 👨‍💻[@MatheusdeCBraga](https://github.com/MatheusdeCBraga)
 - 👨‍💻[@Messias](https://github.com/messias003)
 - 🎨Thais Aquino Vaz
 
