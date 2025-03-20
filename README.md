@@ -4,7 +4,7 @@ Este projeto, desenvolvido como parte da disciplina de Empreendedorismo, tem com
 ## Autores
 
 - 👩‍💻[@BrunaSoug](https://github.com/BrunaSoug)
-- 👨‍💻[@caiodmoretti](https://github.com/caiodmoretti).
+- 👨‍💻[@caiodmoretti](https://github.com/caiodmoretti)
 - 🎨Daniel Pereira Godoy
 - 👨‍💻[@EvertonFSilva](https://github.com/EvertonFSilva)
 - 🎨Jaderson Gonçalves Abreu
