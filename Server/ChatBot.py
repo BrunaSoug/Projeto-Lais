@@ -17,7 +17,7 @@ class ChatBot:
 
     def initialize(self, db_path, model_name, api_key):
         db_uri = f"sqlite:///{db_path}"
-        self.db = SQLDatabase.from_uri(db_uri)
+        self.db = SQLDatabase.from_uri( db_uri, include_tables=["data"], sample_rows_in_table_info=3)
         
         self.chat_model = ChatGroq(
             temperature=0,
@@ -29,6 +29,15 @@ class ChatBot:
             self.chat_model,
             db=self.db,
             agent_type="openai-tools",
+            verbose=True,
+            agent_executor_kwargs={
+                "prefix": (
+                    "Você é um assistente que responde perguntas sobre um banco SQLite. "
+                    "A principal tabela se chama 'data'. Use apenas essa tabela. "
+                    "Filtre por 'ano_da_emenda' sempre que o usuário mencionar um ano. "
+                    "Use os nomes de colunas exatamente como estão: 'localidade_de_aplicacao_do_recurso', 'valor', 'ano_da_emenda', etc. "
+                )
+            }
         )
 
     async def handle_connection(self, websocket):
@@ -40,7 +49,6 @@ class ChatBot:
                 question = request.get("question", "")
                 if question:
                     print(f"Pergunta: {question}")
-                    question = f"Responda em português: {question}"
                     response = await self._process_question(question)
                     print(f"Resposta: {response}")
                     await self.manager.send_message(response, websocket)
@@ -87,7 +95,7 @@ app = FastAPI()
 
 @app.websocket("/chat")
 async def websocket_endpoint(websocket: WebSocket):
-    db_path = Path("C:/Users/evert/Desktop/Projeto/dados.db").as_posix()
+    db_path = Path("C:/Users/evert/Desktop/Server/dados.db").as_posix()
     model_name = "llama3-70b-8192"
     api_key = "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"
     
