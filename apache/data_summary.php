@@ -14,12 +14,17 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+
 <body class="padrao">
     <?php include 'navbar.php'; ?>
-    <div style=" margin-left: 50px; margin-top: 20px;">
+    <div style=" margin-left: 100px; margin-top: 20px;">
         <div
-            style="margin-top: 20px; margin-left: 320px; display: flex; justify-content: space-between; align-items: center;">
-            <img src="img/icone-lais.png" alt="Lais" class="img-fluid" style="max-width: 8%; object-fit: contain;">
+            style="margin-top: 20px; margin-left: 320px; display: flex; justify-content: space-between; align-items: center;  padding-right: 20px;">
+            <img src="img/icone-lais.png" alt="Lais" class="img-fluid" style="max-width: 10%; object-fit: contain;">
+            <div class="user-box">
+                <span>Usuário</span>
+                <img src="img/icone-usuario.png" alt="Usuário" class="user-icon">
+            </div>
         </div>
         <div class="container-principal">
             <div class="mb-2 text-start">

@@ -16,16 +16,20 @@
 
 <body class="padrao">
     <?php include 'navbar.php'; ?>
-    <div class="container-principal" style=" margin-left: 50px; margin-top: 20px;">
-        <div style=" margin-left: 50px; margin-top: 20px;">
-            <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center;">
-                <img src="img/icone-lais.png" alt="Lais" class="img-fluid" style="max-width: 8%; object-fit: contain;">
+    <div style=" margin-left: 100px; margin-top: 20px;">
+        <div
+            style="margin-top: 20px; margin-left: 320px; display: flex; justify-content: space-between; align-items: center;  padding-right: 20px;">
+            <img src="img/icone-lais.png" alt="Lais" class="img-fluid" style="max-width: 10%; object-fit: contain;">
+            <div class="user-box">
+                <span>Usuário</span>
+                <img src="img/icone-usuario.png" alt="Usuário" class="user-icon">
             </div>
+        </div>
             <div class="container-principal"
-                style="height: 100vh; padding-left: 0px; padding-right: 150px; margin-top: 125px; background-color: transparent; box-shadow: none; width: 100%; max-width: none;">
-                <div style="text-align: left;">
+                style="height: 100vh; padding-right: 150px; margin-top: 125px; background-color: transparent; box-shadow: none; width: 100%; max-width: none;">
+                <div style="text-align: left; max-width: 80%;">
                     <h1 class="titulo">Quem somos?</h1>
-                    <p class="texto-corrido">Somos os responsáveis por tornar o Siga Verba possível. Este projeto foi
+                    <p class="texto-corrido-emendas">Somos os responsáveis por tornar o Siga Verba possível. Este projeto foi
                         desenvolvido como parte de uma disciplina de Empreendedorismo, por uma equipe multidisciplinar
                         unida pela missão de conectar você a informações públicas de forma <span
                             style="color:var(--cor-destaque);font-weight: bold;">simples</span> e <span

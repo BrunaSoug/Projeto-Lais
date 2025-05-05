@@ -364,12 +364,13 @@ body.padrao {
 .team-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);  /* 3 colunas iguais */
-    gap: 40px 60px;  /* espaçamento vertical e horizontal */
-    justify-items: center;
+    gap: 0px 20px;  /* espaçamento vertical e horizontal */
+    justify-items: left;
     align-items: start;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    width: 90%;         /* ocupa toda a largura disponível */
+    max-width: none;     /* remove o limite de 1000px */
+    margin: 0;           /* remove centralização */
+    padding: 10px 10px;  /* mantém o padding interno */
 
 }
 
@@ -395,4 +396,23 @@ body.padrao {
 .team-member img {
     width: 130px;
     height: 130px;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    color: var(--cinza-usuario);
+    font-size: 16px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: var(--cor-branco);
+    border: 3px solid var(--cor-branco);
 }
