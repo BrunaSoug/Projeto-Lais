@@ -13,24 +13,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .user-box {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-family: var(--fonte-principal);
-            font-weight: 300;
-            color: var(--cinza-usuario);
-            font-size: 16px;
-        }
-
-        .user-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            padding: 4px;
-            background-color: var(--cor-branco);
-            border: 3px solid var(--cor-branco);
-        }
 
         .apresentacao-lais {
             display: flex;
@@ -130,7 +112,9 @@
             <img src="img/icone-lais.png" alt="Lais" class="img-fluid" style="max-width: 10%; object-fit: contain;">
             <div class="user-box">
                 <span>Usuário</span>
+                <div class="user-icon-wrapper">
                 <img src="img/icone-usuario.png" alt="Usuário" class="user-icon">
+                </div>
             </div>
         </div>
 
@@ -143,8 +127,7 @@
                     <p><strong><b>Olá! Eu sou a Lais.</b></strong> Estou aqui para te ajudar a entender melhor como o
                         dinheiro público é usado e o que os parlamentares estão propondo nas leis.</p>
                     <p>Pode me perguntar sobre gastos, projetos de lei, ou até sobre um político específico.</p>
-                    <p><strong><b>Quer tentar?</b></strong><br>Você pode dizer, por exemplo: <em>“Qual deputado mais
-                            enviou emendas para Campos dos Goytacazes?”</em></p>
+                    <p><strong><b>Quer tentar?</b></strong><br>Você pode dizer, por exemplo: <em>“Qual deputado mais enviou emendas para Campos dos Goytacazes?”</em></p>
                     <p>Sempre que tiver dúvida, é só me chamar. Vamos por partes, no seu tempo.</p>
                 </div>
             </div>

@@ -22,7 +22,9 @@
             <img src="img/icone-lais.png" alt="Lais" class="img-fluid" style="max-width: 10%; object-fit: contain;">
             <div class="user-box">
                 <span>Usuário</span>
+                <div class="user-icon-wrapper">
                 <img src="img/icone-usuario.png" alt="Usuário" class="user-icon">
+                </div>
             </div>
         </div>
             <div class="container-principal"

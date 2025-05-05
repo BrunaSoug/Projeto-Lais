@@ -22,7 +22,9 @@
             <img src="img/icone-lais.png" alt="Lais" class="img-fluid" style="max-width: 10%; object-fit: contain;">
             <div class="user-box">
                 <span>Usuário</span>
+                <div class="user-icon-wrapper">
                 <img src="img/icone-usuario.png" alt="Usuário" class="user-icon">
+                </div>
             </div>
         </div>
         <div class="container-principal">
@@ -71,7 +73,7 @@
                 </ul>
             </div>
 
-            <div class="mb-2 text-start">
+            <div class="mb-2 text-start" style="padding-top: 25px">
                 <h1 class="titulo">De onde vem o dinheiro?</h1>
                 <p class="texto-corrido-emendas">
                     A verba vem do Orçamento Geral da União (OGU), que é o planejamento financeiro do governo federal
