@@ -236,8 +236,8 @@ p.texto-corrido-emendas {
     font-weight: 300; /* Isso aplica o peso Light */
     color: #FFFFFF;
     font-size: 16pt;
-    padding-top: 18pt;
-    padding-bottom: 18pt; 
+    padding-top: 8pt;
+    padding-bottom: 8pt; 
 }
 p.texto-corrido-sem-padding {
     font-family: 'Roboto Light', Roboto, sans-serif;
@@ -408,11 +408,20 @@ body.padrao {
     font-size: 16px;
 }
 
-.user-icon {
-    width: 40px;
-    height: 40px;
+.user-icon-wrapper {
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    padding: 4px;
     background-color: var(--cor-branco);
     border: 3px solid var(--cor-branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Garante que nada saia do círculo */
+}
+
+.user-icon {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }

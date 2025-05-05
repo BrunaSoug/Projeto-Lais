@@ -13,14 +13,12 @@ class Agent:
         self.executor = create_sql_agent(
             self.model,
             db=db,
-            agent_type="openai-tools",
+            agent_type="zero-shot-react-description",
+            handle_parsing_errors=True,
             verbose=False,
             agent_executor_kwargs={
                 "prefix": (
-                    "Você é um assistente que responde perguntas sobre um banco SQLite. "
-                    "A principal tabela se chama 'data'. Use apenas essa tabela. "
-                    "Filtre por 'ano_da_emenda' sempre que o usuário mencionar um ano. "
-                    "Use os nomes de colunas exatamente como estão: 'localidade_de_aplicacao_do_recurso', 'valor', 'ano_da_emenda', etc."
+                    "Você é um assistente que responde perguntas sobre emendas parlamentares usando um banco SQL. "
                 )
             }
         )

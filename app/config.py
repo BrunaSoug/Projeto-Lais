@@ -16,9 +16,9 @@ def load_env_file(path="app/.env"):
             os.environ[key] = value
 
 # Carrega as variáveis
-load_env_file()
+#load_env_file()
 
 # Usa as variáveis
-DB_PATH = os.environ.get("DB_PATH")
-API_KEY = os.environ.get("API_KEY")
+DB_PATH = "C:/Users/caiod/Documents/Caio/SI/7_periodo/Empreendedorismo/Projeto-Lais/database/dados.db"
+API_KEY = "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"
 MODEL_NAME = "llama3-70b-8192"
