@@ -25,7 +25,7 @@ class ChatHandler:
                 question = data.get("question", "")
                 if question:
                     print(f"[Pergunta] {question}")
-                    translated_response = await self._generate_response(question)
+                    translated_response = await self._generate_response(question.lower())
                     print(f"[Resposta] {translated_response}")
                     await self.connection_manager.send_message(translated_response, websocket)
         except WebSocketDisconnect:

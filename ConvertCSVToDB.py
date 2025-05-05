@@ -50,7 +50,7 @@ def csv_para_sqlite_filtrado(csv_arquivo, banco_dados, tabela):
         
         for linha in leitor:
             if len(linha) == len(colunas_limpas):
-                dados_filtrados = [linha[i] for i in indices_filtrados]
+                dados_filtrados = [linha[i].lower() if isinstance(linha[i], str) else linha[i] for i in indices_filtrados]
                 
                 # Filtrar pelo intervalo de ano_da_emenda
                 if "ano_da_emenda" in colunas_filtradas:
